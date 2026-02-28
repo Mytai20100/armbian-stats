@@ -1,4 +1,7 @@
 # armbian-stats
+![Go Version](https://img.shields.io/badge/Go-1.24.4-00ADD8?logo=go&logoColor=white)
+![Version](https://img.shields.io/badge/version-v0.1-blue)
+![Language](https://img.shields.io/badge/language-Go-00ADD8?logo=go&logoColor=white)
 
 Lightweight system monitor for Armbian / Linux SBCs.
 Single static binary, no external dependencies at runtime.
@@ -104,8 +107,7 @@ After=network.target
 
 [Service]
 Type=simple
-WorkingDirectory=/opt/armbian-stats
-ExecStart=/opt/armbian-stats/armbian-stats
+ExecStart=/bin/armbian-stats
 Restart=on-failure
 
 [Install]
