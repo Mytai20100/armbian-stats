@@ -41,11 +41,13 @@ jobs:
 
       - name: Build arm64
         run: |
+          go mod tidy 
           GOOS=linux GOARCH=arm64 \
           go build -ldflags="-s -w" -o armbian-stats-linux-arm64
 
       - name: Build armv7
         run: |
+          go mod tidy
           GOOS=linux GOARCH=arm GOARM=7 \
           go build -ldflags="-s -w" -o armbian-stats-linux-armv7
 
