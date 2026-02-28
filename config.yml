@@ -1,0 +1,17 @@
+# armbian-stats configuration
+
+host: "0.0.0.0"
+port: 6777
+interval: 2
+
+theme:
+  background:  "#0d1117"
+  surface:     "#161b22"
+  surface_alt: "#1c2128"
+  primary:     "#58a6ff"
+  secondary:   "#3fb950"
+  accent:      "#f0883e"
+  warning:     "#ff7b72"
+  text:        "#e6edf3"
+  text_muted:  "#8b949e"
+  border:      "#30363d"
